@@ -47,10 +47,12 @@ Shell: Command Interpreter to execute the commands.
     - grep filters audio devices with case insensisitivity.  
 
 24. Search file names or folder names:
-    ``` sudo find / -iname '*java*' 2>/dev/null```  (at root level)
+    ``` sudo find / -iname '*java*' 2>/dev/null```  (at root level)  
     ``` find ~ -iname '*java*'```
+    ``` find ~ -type f "*.txt"```
+    Note that in CLI ' ' or " " is treated same by shell.
 
-25. ```ls -lahtr ~``` : Lists All Home-Directory Entries by Modification Time
+26. ```ls -lahtr ~``` : Lists All Home-Directory Entries by Modification Time
      - Flags exp:  
      -l Long listing format  
      -a Include hidden entries (names beginning with .)  
@@ -58,7 +60,7 @@ Shell: Command Interpreter to execute the commands.
      -h Show file sizes in human-readable units  
      -r Reverse the sort order
 
-26. Harry potter book:
+27. Harry potter book:
    * curl -L "url" -o book.txt  (-L(opt): follows redirects, -o specifies what name shoube be given to saved one)
    * head -n 30 book.txt
    * tail -n 30 book.txt
