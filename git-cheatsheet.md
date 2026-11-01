@@ -11,14 +11,14 @@ It is a system that tracks and manages every change to your project source code.
 
 4. Repository: Collection of source code (folder name).  
    
-6. Commits: A commit is a saved snapshot of your project's file at a specific point of time. It is identified by commit msg and unique SHA1 hash code.
+6. Commits: A commit is a saved snapshot of your project's file at a specific point of time. It is identified by commit msg and unique SHA1 hash code.  
    Golden rule of commit: Commit small, commit often, commit working code.  
 
-7. Branches: A branch is an independent, parallel timeline for your project's code.   
-Instead of modifying the working production code directly, you split off onto a branch to build a new feature or fix a bug in total isolation. Then merge into main.
+7. Branches: A branch is an independent, parallel timeline for your project's code.  
+Instead of modifying the working production code directly, you split off onto a branch to build a new feature or fix a bug in total isolation. Then merge into main.  
 Usage: Work divide, Emergency fixes, Code review and permit, No merge conflicts.  
 
-7.Every local repo undergoes working directory --> Staging area (git add .) --> Commit area (git commit -m).
+7.Every local repo undergoes working directory --> Staging area (git add .) --> Commit area (git commit -m).  
 
 8. You can use ssh or Personal Access Tokens to connect or authenticate local system to github(cloud).  
 
@@ -29,12 +29,13 @@ Usage: Work divide, Emergency fixes, Code review and permit, No merge conflicts.
 3. ```git init```: Initializing git repo.
 4. ```git add a.txt```: add a file a.txt
 5. ```git commit -m "first commit"```: make a commit.
-6. ```git branch leaf```: create a new branch called leaf.
-7. ```git switch leaf```: Switch to leaf branch.
-8. ```git add b.txt```: add a file b.txt.
+6. ```git branch leaf```: create a new branch called leaf.  
+7. ```git switch leaf```: Switch to leaf branch. 
+8. ```git add b.txt```: add a file b.txt.  
 9. ```git commit -m "second commit"```: create second commit.
 10. ```git switch main``` and  ```git merge leaf```: Merge leaf into master.
-11. HEAD: head is a pointer tells Git which branch and commit your terminal is currently looking at.(find with ```git log```)
+11. HEAD: head is a pointer tells Git which branch and commit your terminal is currently looking at.(find with ```git log```)  
+--------------
 
 12. git remote add origin "url"
 13. git pull origin main (pulls out all the latest changes from main branch and adds to your current code)
