@@ -32,8 +32,9 @@ Shell: Command Interpreter to execute the commands.
 
 18. kill -9 PID (root PID)
 19. pkill firefox
+20. ps -aef | grep firefox | awk '{print $2}' | xargs kill -9 (as per review question).
 
-20. whoami(current username), id(current user ID, primary group, supplementary groups)
+21. whoami(current username), id(current user ID, primary group, supplementary groups)
     
  **20. Print all the user names:** 
 ``` cut -d: -f1 /etc/passwd```  
